@@ -278,7 +278,7 @@ p{
     transition: 0.3s;
 }
 .favorite-flavor-box:hover .favorite-ice-cream{
-    top: -80px;
+    top: -110px;
 }
 .favorite-flavor-info p{
     max-width: 290px;
@@ -921,7 +921,7 @@ footer .logo img{
         justify-content: center;
     }
     .favorite-flavor-box:hover .favorite-ice-cream {
-        top: -100px;
+        top: -110px;
     }
 
 }
