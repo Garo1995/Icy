@@ -16,6 +16,12 @@ $(document).ready(function () {
         $('.menu-content').removeClass('transition-menu');
         $('.open-menu').removeClass('close-menu');
     })
+    $(window).on('click', function (e) {
+        $('.menu-content').addClass('menu-width');
+        $('body').removeClass('body_fix');
+        $('.menu-content').removeClass('transition-menu');
+        $('.open-menu').removeClass('close-menu');
+    });
 });
 
 
@@ -54,10 +60,10 @@ let milkshakesSwiper = new Swiper(".milkshakes-slider", {
     spaceBetween: 10,
     loop: true,
     speed: 1000,
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction: false,
+    // },
     breakpoints: {
 
         '767': {

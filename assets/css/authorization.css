@@ -11,12 +11,15 @@
 .go-back-home:hover{
     background: #14C5FF;
 }
-.go-back{
+
+.go-back-home img{
     transition: 0.3s;
-    content: url("../img/go-back.svg");
-    width: 16px;
-    height: 16px;
 }
+
+.go-back-home:hover img{
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+
 .authorization-info{
     margin-top: 20px;
 }
@@ -75,5 +78,15 @@
     }
     .authorization-btn {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 575px){
+    .authorization-info p {
+        max-width: 290px;
+        width: 100%;
+    }
+    .btn-telegram, .btn-vk {
+        max-width: 380px;
     }
 }

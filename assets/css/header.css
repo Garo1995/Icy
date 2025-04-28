@@ -47,7 +47,9 @@ header{
     background: #FFFFFF;
     color: #14C5FF;
 }
-
+.nav-menu a img{
+    width: 20px;
+}
 
 header .btn-black {
    font-size: 18px;

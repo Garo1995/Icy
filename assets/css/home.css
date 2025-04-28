@@ -164,6 +164,7 @@ p{
 .btn-arrow{
     transition: 0.4s;
     background: unset;
+    width: max-content;
 }
 .btn-name{
     background: #14C5FF;
@@ -218,7 +219,9 @@ p{
     display: none;
 }
 
-
+#milkshakes .ice-cream-title h2 {
+    max-width: 450px;
+}
 .favorite-flavor{
     padding: 192px 0;
 }
@@ -295,8 +298,11 @@ p{
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    position: sticky;
-    top: 60px;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .milkshakes-grid{
@@ -304,6 +310,7 @@ p{
     position: relative;
     z-index: 1;
     grid-gap: 20px;
+    padding-top: 340px;
 }
 .milkshakes-box{
     background: #FFFFFF;
@@ -318,11 +325,55 @@ p{
 }
 
 .milkshakes-photo{
-    display: flex;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.milkshakes-photo img{
+    width: 80px;
+}
+
+.col-yellow{
+    background: #EEFF83;
+
+}
+.col-red{
+    background: #F84A4B;
+
+}
+.col-brown{
+    background: #DFC8C0;
+
+}
+.col-green{
+    background: #55C8BD;
+
+}
+.col-pink{
+    background: #FFBCE3;
+
+}
+.col-blue{
+    background: #14C5FF;
+
+}
+.col-orange{
+    background: #FF9C4B;
+
+}
+.col-brown-st{
+    background: #8A552A;
+
 }
 
 .milkshakes-box:nth-child(1){
@@ -515,10 +566,16 @@ footer{
     line-height: 22px;
     text-align: center;
     transition: 0.3s;
-    gap: 5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 .footer-menu a:hover{
     color: #14C5FF;
+}
+.footer-menu a img{
+    width: 20px;
+
 }
 .rights-reserved{
     padding: 60px 0 100px;
@@ -809,7 +866,7 @@ footer .logo img{
     }
 
     .milkshakes-box {
-        max-width: 335px;
+        max-width: 345px;
         width: 100%;
         height: 265px;
         border-radius: 32px;
@@ -817,12 +874,15 @@ footer .logo img{
         margin: 0 auto;
     }
     .milkshakes-photo {
-        height: 190px;
+        height: 180px;
         width: 100%;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+        border-bottom-right-radius: 200px;
+        border-bottom-left-radius: 200px;
+
     }
-    .milkshakes-photo img{
-        width: 100%;
-    }
+
     footer {
         padding: 0;
     }
@@ -844,13 +904,14 @@ footer .logo img{
 
     .footer-banner:after {
         background-image: url(../img/footer-mob-right.png);
-        max-width: 100%;
+        max-width: 354px;
         border-radius: 0 50px 50px 50px;
         height: 309px;
         top: auto;
         bottom: 0;
         right: auto;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .footer-banner {
@@ -859,7 +920,9 @@ footer .logo img{
         height: 680px;
         justify-content: center;
     }
-
+    .favorite-flavor-box:hover .favorite-ice-cream {
+        top: -100px;
+    }
 
 }
 
@@ -894,6 +957,12 @@ footer .logo img{
     }
     .day-sweeter-box img {
         border-radius: 0 0 32px 32px;
+        width: auto;
+        height: 100%;
+    }
+    .day-sweeter-box:nth-child(1) img {
+        height: 245px;
+
     }
     .favorite-flavor-fon .ice-cream-title h2 {
         max-width: 315px;
@@ -905,7 +974,18 @@ footer .logo img{
         border-radius: 0 0 50px 50px;
         height: 227px;
     }
+    .favorite-flavor-box {
+        max-width: 382px;
+        width: 100%;
+    }
 
-
-
+    .favorite-flavor-fon .ice-cream-title p {
+        max-width: 337px;
+    }
+    .favorite-flavor:before {
+        background-position: center;
+    }
+    .favorite-flavor:after {
+        background-position: center;
+    }
 }
