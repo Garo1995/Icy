@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $('.open-menu').on('click', function () {
+    $('.open-menu').on('click', function (e) {
+        e.stopPropagation();
         $(this).toggleClass('close-menu');
         if ($(this).hasClass('close-menu')) {
             $('.menu-content').addClass('transition-menu');
