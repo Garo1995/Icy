@@ -50,18 +50,6 @@
 }
 
 
-@font-face {
-    font-family: 'Inter';
-    src: url('Inter-Medium.eot');
-    src: local('Inter Medium'), local('Inter-Medium'),
-    url('Inter-Medium.eot?#iefix') format('embedded-opentype'),
-    url('Inter-Medium.woff2') format('woff2'),
-    url('Inter-Medium.woff') format('woff'),
-    url('Inter-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
 
 
 
@@ -84,17 +72,4 @@
     font-display: swap;
 }
 
-
-@font-face {
-    font-family: 'Unbounded Blond';
-    src: url('Unbounded-Blond.eot');
-    src: local('Unbounded Blond'), local('Unbounded-Blond'),
-    url('Unbounded-Blond.eot?#iefix') format('embedded-opentype'),
-    url('Unbounded-Blond.woff2') format('woff2'),
-    url('Unbounded-Blond.woff') format('woff'),
-    url('Unbounded-Blond.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
